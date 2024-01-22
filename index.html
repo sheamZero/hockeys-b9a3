@@ -39,7 +39,7 @@
 </head>
 
 <body class="font-manrope">
-    <header class="container mx-auto lg:py-10 lg:px-28">
+    <header class="container mx-auto py-4 lg:py-10 px-4 lg:px-28">
 
         <!-- Icons styles -->
         <div class="navbar bg-base-100">
@@ -68,7 +68,6 @@
                 </a>
             </div>
 
-
             <!-- Menu related style -->
             <div class="navbar-center hidden lg:flex">
                 <ul class="text-black text-base font-medium space-x-5 menu menu-horizontal px-1">
@@ -90,7 +89,36 @@
         </div>
 
     </header>
+
     <main>
+        <!-- Banner section -->
+        <section class="relative container mx-auto px-5 lg:px-28">
+
+            <div class="carousel w-full h-[35vh] lg:h-[70vh] ">
+                <!-- First Slide -->
+                <div id="slide1"
+                    class="carousel-item relative w-full bg-[url('./Images/1.png')] bg-center bg-cover bg-no-repeat rounded-2xl flex justify-center items-center">
+                    <div class="absolute flex lg:bottom-10 lg:left-10 space-x-3">
+                        <a href="#slide2" class="btn btn-circle border-none text-white bg-black">❮</a>
+                        <a href="#slide2" class="btn btn-circle border-none text-white bg-black">❯</a>
+                    </div>
+                </div>
+                <!-- Second slide -->
+                <div id="slide2"
+                    class="carousel-item relative w-full bg-[url('./Images/2.png')] bg-center bg-cover bg-no-repeat rounded-2xl flex justify-center items-center">
+                    <div class="absolute flex lg:bottom-10 lg:left-10 space-x-3">
+                        <a href="#slide1" class="btn btn-circle border-none text-white bg-black">❮</a>
+                        <a href="#slide1" class="btn btn-circle border-none text-white bg-black">❯</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Meet all the heroes -->
+            <div class="bg-h-color p-8 rounded-xl w-full my-4 lg:absolute lg:w-[40%] lg:right-36 lg:bottom-8">
+                <h2 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h2>
+                <p class="text-base text-[#FFFFFF99] font-medium mt-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam<br>turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>          
+        </section>
 
     </main>
     <footer>
