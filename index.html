@@ -28,18 +28,75 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'h-color': '#131318',
+                        'p-color': 'rgba(19, 19, 24, 0.60)',
+                        'btn-bg': '#FF4240',
                     }
                 }
             }
         }
     </script>
-
 </head>
 
-<body>
+<body class="font-manrope">
+    <header class="container mx-auto lg:py-10 lg:px-28">
+
+        <!-- Icons styles -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>about</a></li>
+                        <li><a>Page</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Icon (Hockey's) -->
+                <a class="text-h-color font-extrabold text-2xl lg:text-4xl">
+                    Hockey<span class="text-btn-bg">'</span>s
+                </a>
+            </div>
+
+
+            <!-- Menu related style -->
+            <div class="navbar-center hidden lg:flex">
+                <ul class="text-black text-base font-medium space-x-5 menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>about</a></li>
+                    <li><a>Page</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Search & Button -->
+            <div class="navbar-end">
+                <div class="flex justify-center items-center">
+                    <img class="hidden cursor-pointer lg:flex" src="./Images/search.png" alt="">
+                    <a class="btn bg-btn-bg ml-3 text-white text-xl font-bold px-5">Get Ticket</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
     <main>
-        <h2>this is this is</h2>
+
     </main>
+    <footer>
+
+    </footer>
+
 </body>
 
 </html>
